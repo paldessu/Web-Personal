@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATHIFAL.DEV — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<nav id="nav">
+  <a href="#" class="nav-logo">ATHIFAL<span>.</span>DEV</a>
+  <ul class="nav-links">
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Hubungi Saya</button>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow" id="heroGlow"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Full-Stack Developer &amp; Tech Enthusiast</div>
+    <h1 class="hero-name glitch" data-text="ATHIFAL JAUZA">
+      ATHIFAL<br>
+      <span class="line2">JAUZA<span class="dot">.</span></span>
+    </h1>
+    <p class="hero-desc">
+      Membangun produk digital yang <strong>cepat</strong>, <strong>scalable</strong>, dan punya kepribadian. Dari arsitektur sistem hingga antarmuka pengguna yang menarik.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">Lihat Projects</a>
+      <a href="#contact" class="btn-outline">Let's Talk</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-label reveal">01 — Tentang Saya</div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <h2 class="section-title">Saya bikin hal-hal yang <em>beneran</em> bekerja.</h2>
+      <p>
+        Saya seorang mahasiswa <strong>Sistem Komputer</strong> di Universitas Pamulang Serang dengan ketertarikan kuat pada jaringan, Internet of Things (IoT), dan pengembangan web.
+      </p>
+      <p>
+        Spesialisasi saya adalah membangun <strong>web applications</strong> yang performant
+        dan design system yang konsisten. Saya senang bekerja di persimpangan antara
+        engineering sistem dan desain — tempat di mana produk yang benar-benar baik lahir.
+      </p>
+      <p>
+        Di luar coding, saya suka mendalami ekosistem Web3, <em>smart contracts</em>,
+        dan menikmati film action di waktu luang.
+      </p>
+    </div>
+    <div class="stats-grid reveal">
+      <div class="stat-card">
+        <span class="stat-num">3<span>+</span></span>
+        <span class="stat-label">Tahun Eksplorasi Tech</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">10<span>+</span></span>
+        <span class="stat-label">Projects Selesai</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">1<span></span></span>
+        <span class="stat-label">Instansi Pemerintahan</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">100<span>%</span></span>
+        <span class="stat-label">Dedikasi</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-label reveal">02 — Tech Stack</div>
+  <h2 class="section-title reveal">Senjata<br>Andalan.</h2>
+  <div class="skills-list reveal">
+    <div class="skill-row">
+      <span class="skill-name">Computer Networks (TCP/IP, VLAN)</span>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div>
+      <span class="skill-pct">90%</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-name">Web Development</span>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div>
+      <span class="skill-pct">85%</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-name">IoT & Automated Systems</span>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
+      <span class="skill-pct">80%</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-name">Web3 & Solidity</span>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div>
+      <span class="skill-pct">75%</span>
+    </div>
+  </div>
+  <div class="skill-tags reveal">
+    <span class="tag">HTML/CSS/JS</span>
+    <span class="tag">Circuit Analysis</span>
+    <span class="tag">Computer Architecture</span>
+    <span class="tag">Smart Contracts</span>
+    <span class="tag">Cisco Packet Tracer</span>
+    <span class="tag">UI/UX Design</span>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-label reveal">03 — Selected Work</div>
+  <h2 class="section-title reveal">Projects yang<br>Saya Banggakan.</h2>
+  <div class="projects-grid">
+    <div class="project-card project-featured reveal">
+      <div class="project-visual">
+        <div class="feat-code">
+          <span class="c-red">const</span> <span class="c-wh">buildSystem</span> = <span class="c-red">async</span> () =&gt; {<br>
+          &nbsp;&nbsp;<span class="c-red">const</span> <span class="c-wh">idea</span> = <span style="color:rgba(255,45,85,0.6)">"public service"</span>;<br>
+          &nbsp;&nbsp;<span class="c-red">await</span> design(idea);<br>
+          &nbsp;&nbsp;<span class="c-red">await</span> code(idea);<br>
+          &nbsp;&nbsp;<span class="c-red">return</span> <span style="color:#2EFF8A">deploy(idea)</span>;<br>
+          }
+        </div>
+      </div>
+      <div style="padding:40px">
+        <div class="project-num">FEATURED — 01</div>
+        <div class="project-name">Aplikasi Pengaduan Masyarakat</div>
+        <p class="project-desc">
+          Platform berbasis web yang dikembangkan khusus untuk instansi pemerintahan. Memfasilitasi masyarakat untuk melaporkan keluhan secara efisien dan transparan.
+        </p>
+        <div class="project-stack">
+          <span>Web App</span><span>Database Management</span><span>UI/UX</span>
+        </div>
+        <a href="#" class="project-link">Lihat Project</a>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-num">02</div>
+      <div class="project-name">Sistem Hidroponik Otomatis</div>
+      <p class="project-desc">
+        Implementasi sistem Internet of Things (IoT) untuk mengotomatisasi pemberian nutrisi dan penyiraman pada tanaman hidroponik.
+      </p>
+      <div class="project-stack">
+        <span>IoT</span><span>Microcontroller</span><span>Sensors</span>
+      </div>
+      <a href="#" class="project-link">Lihat Project</a>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-num">03</div>
+      <div class="project-name">Web3 Smart Contracts</div>
+      <p class="project-desc">
+        Pengembangan dan verifikasi smart contract menggunakan Solidity, serta eksplorasi ekosistem terdesentralisasi.
+      </p>
+      <div class="project-stack">
+        <span>Solidity</span><span>Blockchain</span><span>Web3</span>
+      </div>
+      <a href="#" class="project-link">Lihat Project</a>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="section-label reveal">04 — Perjalanan</div>
+  <h2 class="section-title reveal">Pengalaman.</h2>
+  <div class="timeline reveal">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-period">2026</div>
+      <div class="timeline-role">Web Developer Intern (PKL)</div>
+      <div class="timeline-company">Dinas Perhubungan (Dishub)</div>
+      <p class="timeline-desc">
+        Menyelesaikan program magang selama enam bulan. Bertanggung jawab dalam merancang dan mengembangkan aplikasi website pengaduan masyarakat untuk mendukung digitalisasi layanan publik.
+      </p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-period">2026</div>
+      <div class="timeline-role">Vice Chairman of Music Division</div>
+      <div class="timeline-company">Organisasi Kemahasiswaan</div>
+      <p class="timeline-desc">
+        Mengelola divisi musik, memimpin kegiatan manajerial, serta mengadakan proses rekrutmen dan wawancara untuk anggota baru.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-label reveal" style="justify-content:center">05 — Kontak</div>
+  <div class="reveal">
+    <div class="contact-big">Mari Kita<br><span class="accent">Berkolaborasi.</span></div>
+    <p class="contact-sub">Terbuka untuk diskusi proyek, freelance, atau sekadar ngobrol soal tech.</p>
+    <div class="contact-links">
+      <a href="mailto:emailanda@example.com" class="contact-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        Email Saya
+      </a>
+      <a href="#" class="contact-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="#" class="contact-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        GitHub
+      </a>
+      <a href="#" class="contact-link">
+        <svg width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+        </svg>
+        instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Athifal Jauza — <span>Built with ☕</span></p>
+  <p>Banten, Indonesia 🇮🇩</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
